@@ -1,0 +1,112 @@
+[
+  {
+    "id": "com-por-02",
+    "nome": "Empadas da Lorys",
+    "descricao": "Uma brasileira em terras Lusitanas que vende além do Amor,Empadas Tipicamente Brasileiras,Caseiras e Artesanais,Quiches e Bombons Salgados. Sob encomenda.",
+    "categoria": "Comida",
+    "local": "Porto",
+    "imagem": "/images/cards/empadaslory.png",
+    "contacto": "https://api.whatsapp.com/send/?phone=351933037254&text&type=phone_number&app_absent=0",
+    "redeSocial": "https://www.instagram.com/empadasdalorys",
+    "endereco": "Vila Nova de Gaia, Porto"
+  },
+  {
+    "id": "com-por-01",
+    "nome": "Pudinharia da Ju",
+    "descricao": "Aqui o pudim é a estrela, mas tem muito mais docinhos",
+    "categoria": "Comida",
+    "local": "Porto",
+    "imagem": "/images/cards/pudim_ju.png",
+    "contacto": "https://api.whatsapp.com/send/?phone=351915099534&text&type=phone_number&app_absent=0",
+    "redeSocial": "https://www.instagram.com/pudinhariadaju/",
+    "endereco": "Porto, PT"
+  },
+  {
+    "id": "ofc-por-01",
+    "nome": "Francine Stancato | Bordô Ateliê",
+    "descricao": "Conectamos pessoas através do Bordado Livre. Criadora do Fala, mas Borda! Cursos | Workshops | Eventos",
+    "categoria": "Oficina",
+    "local": "Porto",
+    "imagem": "/images/cards/bordo.png",
+    "contacto": "https://www.etsy.com/shop/obordoatelie/",
+    "redeSocial": "https://www.instagram.com/obordoatelie/",
+    "endereco": "Porto, PT"
+  },
+  {
+    "id": "com-sin-01",
+    "nome": "I Love Coxinha",
+    "descricao": "Salgados Delivery, Loja & Take Away",
+    "categoria": "Comida",
+    "local": "Sintra",
+    "imagem": "/images/cards/coxinha.png",
+    "contacto": "https://api.whatsapp.com/send/?phone=351912533606&text&type=phone_number&app_absent=0",
+    "redeSocial": "https://www.instagram.com/ilovecoxinha.pt/",
+    "endereco": "Rua Eusébio da Silva Ferreira, 9, 2725-304. Algueirão Mem-martins, Sintra, Portugal 2725-304"
+  },
+  {
+    "id": "prd-por-01",
+    "nome": "Center Carnes Talho",
+    "descricao": "Açougue e distribuidores de produtos alimentícios",
+    "categoria": "Produtos",
+    "local": "Porto",
+    "imagem": "/images/cards/ccarnes.png",
+    "contacto": "https://api.whatsapp.com/send/?phone=351931353299&text&type=phone_number&app_absent=0",
+    "redeSocial": "https://www.instagram.com/talhocentercarnes/",
+    "endereco": "AV. de fernão de magalhães, 513, Porto, Portugal"
+  },
+  {
+    "id": "com-por-03",
+    "nome": "Andreia Cake",
+    "descricao": "Delícias brasileiras em Portugal. Bolos e salgados, kit festas para todas as ocasiões",
+    "categoria": "Comida",
+    "local": "Maia",
+    "imagem": "/images/cards/kitfesta.png",
+    "contacto": "https://www.instagram.com/cake.andreia",
+    "redeSocial": "https://www.instagram.com/cake.andreia",
+    "endereco": "Rua Manuel Gonçalves Lage, Maia, Porto, Portugal 4425-122"
+  },
+  {
+    "id": "fst-bra-01",
+    "nome": "Cricrilayne Art's & Festas",
+    "descricao": "Transformamos SONHOS em REALIDADE com decorações perfeitas. Infantis, 15 anos, casamentos, batizados, eventos corporativo",
+    "categoria": "Festas",
+    "local": "Braga",
+    "imagem": "/images/cards/cris.png",
+    "contacto": "https://www.instagram.com/cricrilayne25/",
+    "redeSocial": "https://www.instagram.com/cricrilayne25/",
+    "endereco": "Braga"
+  },
+  {
+    "id": "gas-por-01",
+    "nome": "The Art of Eating and Making Friends",
+    "descricao": "Jantares Amazônicos exclusivos",
+    "categoria": "Experiência",
+    "local": "Porto",
+    "imagem": "/images/cards/artofemf.png",
+    "contacto": "https://linktr.ee/artofemf",
+    "redeSocial": "https://www.instagram.com/artofemf",
+    "endereco": "Porto"
+  },
+  {
+    "id": "gas-por-02",
+    "nome": "Mandy",
+    "descricao": "Cozinheira independente. Pop-ups e eventos Gastronômicos",
+    "categoria": "Experiência",
+    "local": "Porto",
+    "imagem": "/images/cards/mandy.png",
+    "contacto": "https://www.instagram.com/itsjust.mandy/",
+    "redeSocial": "https://www.instagram.com/itsjust.mandy/",
+    "endereco": "Porto"
+  },
+  {
+    "id": "com-por-04",
+    "nome": "Café do Zuca",
+    "descricao": "Pastel, coxinha, pastel, empada, brigadeiro e sucos regionais. Feijoada aos sábados",
+    "categoria": "Comida",
+    "local": "Maia",
+    "imagem": "/images/cards/zuca.png",
+    "contacto": "https://www.ubereats.com/store/cafe-do-zuca/5vsI4D07QA6S9hRR4gF6vg?diningMode=DELIVERY",
+    "redeSocial": "https://www.instagram.com/cafedozuca/",
+    "endereco": "Maia e Sra da Hora"
+  }
+]
