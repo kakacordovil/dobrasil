@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* === DoBrasil Swiper theme === */
+.dobrasil-swiper .swiper-button-prev,
+.dobrasil-swiper .swiper-button-next {
+  /* cor verde escuro */
+  color: #0f3d2e; /* verde escuro elegante */
+  
+  /* some por padrão */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 200ms ease, transform 200ms ease;
+}
+
+/* aparece só no hover do container (desktop) */
+@media (hover: hover) and (pointer: fine) {
+  .dobrasil-swiper:hover .swiper-button-prev,
+  .dobrasil-swiper:hover .swiper-button-next {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* um micro efeito pra ficar premium */
+  .dobrasil-swiper:hover .swiper-button-prev {
+    transform: translateX(-2px);
+  }
+  .dobrasil-swiper:hover .swiper-button-next {
+    transform: translateX(2px);
+  }
+}
+
+/* bolinhas (pagination) em verde escuro */
+.dobrasil-swiper .swiper-pagination-bullet {
+  background: #0f3d2e;
+  opacity: 0.25;
+}
+
+.dobrasil-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.dobrasil-swiper .swiper-pagination {
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .dobrasil-swiper:hover .swiper-pagination {
+    opacity: 1;
+  }
+}
+
