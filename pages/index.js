@@ -117,7 +117,7 @@ export default function Home() {
                 <span className="font-bold text-black">+120</span> itens
               </div>
               <div>
-                <span className="font-bold text-black">4,8★</span> avaliação
+                <span className="font-bold text-black">5,0★</span> os melhores
               </div>
               <div>
                 <span className="font-bold text-black">Encontre</span> fácil
