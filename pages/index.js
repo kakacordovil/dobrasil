@@ -2,6 +2,13 @@ import HeroCarousel from "@/components/HeroCarousel";
 import ListingCard from "@/components/ListingCard";
 import items from "../data/items.json";
 import { useEffect, useMemo, useState } from "react";
+import SEO from "@/components/SEO";
+
+<SEO
+  title="Curadoria do melhor do Brasil em Portugal"
+  description="Descubra experiências, gastronomia, eventos e produtos brasileiros em Portugal — numa curadoria feita para matar a saudade."
+  path="/"
+/>
 
 export default function Home() {
   const [search, setSearch] = useState("");

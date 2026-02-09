@@ -1,51 +1,69 @@
-import Head from 'next/head'
+import Head from "next/head";
 
-function SEO({ title }) {
-  // customize meta properties
-  // you can pass them as an argument like title in case you want to change for each page
-  const description = process.env.siteDescription
-  const keywords = process.env.siteKeywords
-  const siteURL = process.env.siteUrl
-  const twitterHandle = process.env.twitterHandle
-  const imagePreview = `${siteURL}/${process.env.siteImagePreviewUrl}`
+export default function SEO({
+  title,
+  description,
+  imagePath = "/images/preview.png",
+  path = "",
+  noIndex = false,
+}) {
+  const siteUrl =
+    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+
+  const siteName = "DoBrasil";
+
+  const defaultTitle =
+    process.env.NEXT_PUBLIC_SITE_TITLE ||
+    "DoBrasil — Produtos, Culinária e Experiências do Brasil em Portugal";
+
+  const defaultDescription =
+    process.env.NEXT_PUBLIC_SITE_DESCRIPTION ||
+    "Curadoria de experiências, gastronomia, eventos e produtos do Brasil em Portugal.";
+
+  const metaTitle = title ? `${title} | ${siteName}` : defaultTitle;
+  const metaDescription = description || defaultDescription;
+
+  // normaliza url + path
+  const canonicalUrl = `${siteUrl.replace(/\/$/, "")}${path.startsWith("/") ? path : `/${path}`}`.replace(/\/$/, "");
+
+  const ogImage = `${siteUrl.replace(/\/$/, "")}${imagePath.startsWith("/") ? imagePath : `/${imagePath}`}`;
 
   return (
     <Head>
       <meta charSet="utf-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="description" content={description} />
-      <meta name="keywords" content={keywords} />
-      {/* Twitter */}
-      <meta name="twitter:card" content="summary_large_image" key="twcard" />
-      <meta name="twitter:creator" content={twitterHandle} key="twhandle" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      {noIndex && <meta name="robots" content="noindex,nofollow" />}
+
+      <title>{metaTitle}</title>
+      <meta name="description" content={metaDescription} />
+
+      {/* Canonical */}
+      <link rel="canonical" href={canonicalUrl} />
 
       {/* Open Graph */}
-      <meta property="og:url" content={siteURL} key="ogurl" />
-      <meta property="og:image" content={imagePreview} key="ogimage" />
-      <meta property="og:site_name" content={siteURL} key="ogsitename" />
-      <meta property="og:title" content={title} key="ogtitle" />
-      <meta property="og:description" content={description} key="ogdesc" />
-      <title>{title}</title>
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content={siteName} />
+      <meta property="og:url" content={canonicalUrl} />
+      <meta property="og:title" content={metaTitle} />
+      <meta property="og:description" content={metaDescription} />
+      <meta property="og:image" content={ogImage} />
 
+      {/* Twitter */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={metaTitle} />
+      <meta name="twitter:description" content={metaDescription} />
+      <meta name="twitter:image" content={ogImage} />
+
+      {/* PWA / Icons */}
       <link rel="manifest" href="/manifest.json" />
-      <link
-        href="/icons/icon-16x16.png"
-        rel="icon"
-        type="image/png"
-        sizes="16x16"
-        purpose="any maskable"
-      />
-      <link
-        href="/icons/icon-32x32.png"
-        rel="icon"
-        type="image/png"
-        sizes="32x32"
-        purpose="any maskable"
-      />
-      <link rel="apple-touch-icon" href="/apple-icon.png"></link>
-      <meta name="theme-color" content="#EF4444" />
-    </Head>
-  )
-}
+      <link rel="icon" type="image/png" sizes="16x16" href="/icons/icon-16x16.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-32x32.png" />
+      <link rel="apple-touch-icon" href="/apple-icon.png" />
 
-export default SEO
+      {/* Theme color (verde DoBrasil) */}
+      <meta name="theme-color" content="#0F3D2E" />
+    </Head>
+  );
+};
