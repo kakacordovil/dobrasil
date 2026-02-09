@@ -12,7 +12,7 @@ const slides = [
     title: "Festa para Yamanjá",
     subtitle: "Festa para Yemanjá c/ participação de Maurício Tizumba, Roda de Santo, em Lisboa.",
     image: "/images/cards/santo.png", 
-    linkreservar: "https://www.botaanjos.com/reservas ",
+    linkreservar: "https://www.botaanjos.com/reservas",
     linkexplorar: "https://www.botaanjos.com/programacao/yemanja",
  
 },
@@ -70,13 +70,17 @@ function SlideCard({ item }) {
 
         <div className="mt-6 flex flex-wrap gap-3">
           <a
-            href="{item.linkreservar}"
+            href={item.linkreservar}
+            target="_blank"
+            rel="noreferrer"
             className="inline-flex items-center justify-center rounded-2xl bg-black px-5 py-2.5 text-sm font-semibold text-white hover:opacity-90"
           >
             Reservar
           </a>
           <a
-            href="{item.linkexplorar}"
+            href={item.linkexplorar}
+            target="_blank"
+            rel="noreferrer"
             className="inline-flex items-center justify-center rounded-2xl border border-black/15 bg-white px-5 py-2.5 text-sm font-semibold text-black hover:bg-black/5"
           >
             Explorar
