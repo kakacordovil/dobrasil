@@ -119,5 +119,27 @@
     "contacto": "https://api.whatsapp.com/send?l=pt-BR&phone=351914505637&text=Ol%C3%A1,%20gostaria%20de%20realizar%20um%20pedido!!",
     "redeSocial": "https://www.instagram.com/artedossaboresgourmet/",
     "endereco": "Maia"
+  },
+  {
+    "id": "mer-lis-01",
+    "nome": "Mercado SAUDADJI",
+    "descricao": "Mercearia online de produtos brasileiros",
+    "categoria": "Mercearia",
+    "local": "Lisboa",
+    "imagem": "/images/cards/saudadji.png",
+    "contacto": "https://linktr.ee/saudadji",
+    "redeSocial": "https://www.instagram.com/mercado.saudadji",
+    "endereco": "Agualva-Cacém"
+  },
+  {
+    "id": "com-por-06",
+    "nome": "Dona Sabores do Brasil",
+    "descricao": "Restaurante Brasileiro no Porto",
+    "categoria": "Gastronomia",
+    "local": "Porto",
+    "imagem": "/images/cards/dona.png",
+    "contacto": "https://linktr.ee/donasaboresdobrasil",
+    "redeSocial": "https://www.instagram.com/donasaboresdobrasil",
+    "endereco": "Rua da Lagoa 2285, 4460-315 Sra. da Hora"
   }
 ]

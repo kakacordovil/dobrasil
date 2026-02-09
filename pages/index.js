@@ -186,6 +186,7 @@ export default function Home() {
                 <option value="culinária">Culinária</option>
                 <option value="comida">Comida</option>
                 <option value="oficina">Oficina</option>
+                <option value="mercearia">Mercearia</option>
               </select>
             </div>
           </div>
