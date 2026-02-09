@@ -18,7 +18,7 @@ export default function ListingCard({ item }) {
         />
         {/* Tags */}
         <div className="absolute left-4 top-4 flex gap-2">
-          <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-black shadow-sm">
+          <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-brand-green shadow-sm">
             {item.local}
           </span>
           <span className="rounded-full border border-black/10 bg-black/5 px-3 py-1 text-xs text-white font-semibold shadow-sm">
@@ -29,7 +29,7 @@ export default function ListingCard({ item }) {
 
       {/* Conteúdo */}
       <div className="p-5">
-        <h3 className="text-lg font-extrabold text-black">{item.nome}</h3>
+        <h3 className="text-lg font-extrabold text-brand-green">{item.nome}</h3>
         <p className="mt-2 line-clamp-3 text-sm text-black/70">{item.descricao}</p>
 
         <div className="mt-4 flex flex-wrap items-center gap-2">
@@ -37,7 +37,7 @@ export default function ListingCard({ item }) {
             href={item.contacto}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center justify-center rounded-2xl bg-black px-4 py-2 text-sm font-semibold text-white hover:opacity-90"
+            className="inline-flex items-center justify-center rounded-2xl bg-brand-yellow text-brand-green hover:bg-yellow-400 px-4 py-2 text-sm font-semibold text-white hover:opacity-90"
           >
             Contacto
           </a>
@@ -46,7 +46,7 @@ export default function ListingCard({ item }) {
             href={item.redeSocial}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center justify-center rounded-2xl border border-black/15 bg-white px-4 py-2 text-sm font-semibold text-black hover:bg-black/5"
+            className="inline-flex items-center justify-center rounded-2xl border border-brand-green/15 text-brand-green hover:bg-brand-greenSoft bg-white px-4 py-2 text-sm font-semibold text-black hover:bg-black/5"
           >
             Rede social
           </a>

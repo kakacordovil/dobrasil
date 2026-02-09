@@ -9,10 +9,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        palette: {
-          light: "#F5F3FF",
-          primary: "#7C3AED",
-          dark: "#6D28D9",
+        brand: {
+          green: "#0F3D2E",     // verde escuro elegante (marca)
+          greenSoft: "#E6F2EE", // fundo suave
+          yellow: "#F4C430",    // amarelo destaque
+          yellowSoft: "#FFF4CC",
         },
       },
       fontFamily: {

@@ -85,7 +85,7 @@ export default function Home() {
               Curadoria do melhor do Brasil
             </p>
 
-            <h1 className="mt-4 text-4xl font-black leading-tight tracking-tight text-black md:text-5xl">
+            <h1 className="mt-4 text-4xl font-black leading-tight tracking-tight text-brand-green md:text-5xl">
               Produtos, culinária e experiências do Brasil em Portugal — em um só
               lugar.
             </h1>
@@ -99,14 +99,14 @@ export default function Home() {
             <div className="mt-6 flex flex-wrap gap-3">
               <a
                 href="#ofertas"
-                className="rounded-2xl bg-black px-6 py-3 text-sm font-semibold text-white hover:opacity-90"
+                className="rounded-2xl bg-brand-yellow text-brand-green hover:bg-yellow-400 px-6 py-3 text-sm font-semibold text-white hover:opacity-90"
               >
                 Ver ofertas
               </a>
 
               <a
                 href="mailto:kakacordovil@gmail.com?subject=Quero%20anunciar&body=Ol%C3%A1%2C%0A%0AQuero%20mais%20informa%C3%A7%C3%B5es%20sobre%20an%C3%BAncio%2C%20por%20favor.%0A%0AObrigado"
-                className="rounded-2xl border border-black/15 bg-white px-6 py-3 text-sm font-semibold text-black hover:bg-black/5"
+                className="rounded-2xl border  border-brand-green/30 text-brand-green hover:bg-brand-greenSoft px-6 py-3 text-sm font-semibold text-black"
               >
                 Quero anunciar
               </a>
@@ -114,19 +114,19 @@ export default function Home() {
 
             <div className="mt-6 flex gap-6 text-sm text-black/70">
               <div>
-                <span className="font-bold text-black">+120</span> itens
+                <span className="font-bold text-brand-green">+120</span> itens
               </div>
               <div>
-                <span className="font-bold text-black">5,0★</span> os melhores
+                <span className="font-bold text-brand-green">5,0★</span> os melhores
               </div>
               <div>
-                <span className="font-bold text-black">Encontre</span> fácil
+                <span className="font-bold text-brand-green">Encontre</span> fácil
               </div>
             </div>
           </div>
 
           {/* CARROSSEL */}
-          <div className="rounded-[28px] border border-black/10 bg-white p-4 shadow-sm">
+          <div className="rounded-[28px] border border-brand-green/10 text-brand-green bg-white p-4 shadow-sm">
             <HeroCarousel />
           </div>
         </div>
@@ -137,7 +137,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-4 py-14">
           <div className="mb-8 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
             <div>
-              <h2 className="text-3xl font-extrabold text-black">
+              <h2 className="text-3xl font-extrabold text-brand-green">
                 Descubra por cidade
               </h2>
               <p className="mt-2 max-w-2xl text-black/70">
@@ -154,14 +154,14 @@ export default function Home() {
                 placeholder="Pesquisar por nome, descrição ou endereço…"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className="w-full rounded-xl border border-black/10 px-4 py-2.5 text-sm outline-none focus:border-black/30"
+                className="w-full rounded-xl border border-brand-green/20 px-4 py-2.5 text-sm outline-none focus:border-brand-green/30"
               />
 
               {/* Filtro por local */}
               <select
                 value={local}
                 onChange={(e) => setLocal(e.target.value)}
-                className="w-full rounded-xl border border-black/10 bg-white px-4 py-2.5 text-sm"
+                className="w-full rounded-xl border border-brand-green/20 bg-white px-4 py-2.5 text-sm"
               >
                 <option value="">Todos os locais</option>
                 <option value="Porto">Porto</option>
@@ -176,7 +176,7 @@ export default function Home() {
               <select
                 value={categoria}
                 onChange={(e) => setCategoria(e.target.value)}
-                className="w-full rounded-xl border border-black/10 bg-white px-4 py-2.5 text-sm"
+                className="w-full rounded-xl border border-brand-green/20 bg-white px-4 py-2.5 text-sm"
               >
                 <option value="">Todas as categorias</option>
                 <option value="experiencia">Experiência</option>
@@ -186,7 +186,6 @@ export default function Home() {
                 <option value="culinária">Culinária</option>
                 <option value="comida">Comida</option>
                 <option value="oficina">Oficina</option>
-                <option value="mercearia">Mercearia</option>
               </select>
             </div>
           </div>
@@ -202,21 +201,21 @@ export default function Home() {
               <button
                 onClick={() => setPage((p) => Math.max(1, p - 1))}
                 disabled={!canPrev}
-                className="rounded-xl border border-black/10 bg-white px-4 py-2 text-sm font-semibold text-black disabled:opacity-40"
+                className="rounded-xl border border-brand-green text-brand-green hover:bg-brand-greenSoft bg-white px-4 py-2 text-sm font-semibold text-black disabled:opacity-40"
               >
                 Anterior
               </button>
 
               <span className="text-sm text-black/60">
-                Página <span className="font-semibold text-black">{page}</span>{" "}
+                Página <span className="font-semibold text-brand-green">{page}</span>{" "}
                 de{" "}
-                <span className="font-semibold text-black">{totalPages}</span>
+                <span className="font-semibold text-brand-green">{totalPages}</span>
               </span>
 
               <button
                 onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
                 disabled={!canNext}
-                className="rounded-xl bg-black px-4 py-2 text-sm font-semibold text-white disabled:opacity-40"
+                className="rounded-xl bg-brand-yellow text-brand-green hover:bg-yellow-400 px-4 py-2 text-sm font-semibold text-white disabled:opacity-40"
               >
                 Próximo
               </button>
@@ -242,21 +241,21 @@ export default function Home() {
               <button
                 onClick={() => setPage((p) => Math.max(1, p - 1))}
                 disabled={!canPrev}
-                className="rounded-xl border border-black/10 bg-white px-4 py-2 text-sm font-semibold text-black disabled:opacity-40"
+                className="rounded-xl border border-brand-green text-brand-green hover:bg-brand-greenSoft bg-white px-4 py-2 text-sm font-semibold text-black disabled:opacity-40"
               >
                 Anterior
               </button>
 
               <span className="text-sm text-black/60">
-                Página <span className="font-semibold text-black">{page}</span>{" "}
+                Página <span className="font-semibold text-brand-green">{page}</span>{" "}
                 de{" "}
-                <span className="font-semibold text-black">{totalPages}</span>
+                <span className="font-semibold text-brand-green">{totalPages}</span>
               </span>
 
               <button
                 onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
                 disabled={!canNext}
-                className="rounded-xl bg-black px-4 py-2 text-sm font-semibold text-white disabled:opacity-40"
+                className="rounded-xl bg-brand-yellow text-brand-green hover:bg-yellow-400 px-4 py-2 text-sm font-semibold text-white disabled:opacity-40"
               >
                 Próximo
               </button>
@@ -267,29 +266,29 @@ export default function Home() {
 
       {/* SEÇÃO BENEFÍCIOS */}
       <section id="beneficios" className="mx-auto max-w-6xl px-4 py-14">
-        <h2 className="text-3xl font-extrabold text-black">Por que o DoBrasil?</h2>
+        <h2 className="text-3xl font-extrabold text-brand-green">Por que anunciar no DoBrasil?</h2>
 
         <div className="mt-8 grid gap-4 md:grid-cols-3">
           {[
             {
-              t: "Curadoria esperta",
-              d: "Destaques que dão vontade de clicar e explorar.",
+              t: "Curadoria em nincho",
+              d: "Seu negócio para quem realmente procura.",
             },
             {
               t: "Rápido no mobile",
-              d: "Carrossel com touch + layout leve e direto.",
+              d: "Experiência rápida e intuitiva..",
             },
             {
               t: "Pronto para SEO",
-              d: "Estrutura pensada para ranquear no Google.",
+              d: "Encontrado mais fácil no Google.",
             },
           ].map((b) => (
             <div
               key={b.t}
-              className="rounded-3xl border border-black/10 bg-white p-6 shadow-sm"
+              className="rounded-3xl border text-brand-green/10 bg-white p-6 shadow-sm"
             >
-              <h3 className="text-lg font-bold text-black">{b.t}</h3>
-              <p className="mt-2 text-black/70">{b.d}</p>
+              <h3 className="text-lg font-bold text-brand-green">{b.t}</h3>
+              <p className="mt-2 text-brand-green/70">{b.d}</p>
             </div>
           ))}
         </div>
