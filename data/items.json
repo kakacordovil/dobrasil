@@ -141,5 +141,16 @@
     "contacto": "https://linktr.ee/donasaboresdobrasil",
     "redeSocial": "https://www.instagram.com/donasaboresdobrasil",
     "endereco": "Rua da Lagoa 2285, 4460-315 Sra. da Hora"
+  },
+  {
+    "id": "com-set-ganache-01",
+    "nome": "Ganache Portugal",
+    "descricao": "Doces artesanais brasileiros, especializados em brigadeiros.",
+    "categoria": "Comida",
+    "local": "Azeitão, Setúbal",
+    "imagem": "/images/cards/IMG_1185.jpeg",
+    "contact": "https://ganacheportugal.menulegal.app",
+    "redeSocial": "https://www.instagram.com/ganache.pt",
+    "endereco": "Azeitão, Setúbal, Portugal"
   }
 ]
